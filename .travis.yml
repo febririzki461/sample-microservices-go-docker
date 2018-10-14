@@ -20,8 +20,13 @@ install:
   - go get -u github.com/gin-gonic/gin
 
 # script always runs to completion (set +e). If we have linter issues AND a
-# failing test, we want to see both. Configure golangci-lint with a
-# .golangci.yml file at the top level of your repo.
-script:
-  - go test logins/test/login_pass_test.go  # Run all the tests with the test detector enabled
+
+jobs:  
+  include:
+    - stage: "Login Pass"                # naming the Tests stage
+      name: "LoginPass"            # names the first Tests stage job
+      script: go test logins/test/login_pass_test.go
+    - stage: "Login form user test"
+      name: "Login Form User Test"
+      script: go test logins/test/form_user_test.go
 
