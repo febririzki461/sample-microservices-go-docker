@@ -40,10 +40,26 @@ cd logins
 
 docker build -t logins .
 ```
+in docker images you can see <b>logins</b> in images docker
 
 ## Users
 ```bash
 cd users
 
 docker build -t users .
+```
+in docker images you can see <b>Users</b> in images docker
+
+## Docker
+in docker you can start container, example :
+```bash
+docker run -d logins
+```
+noted: 
+<b> by default follow the installation port in the docker image </b>
+
+## Docker-port
+same with Docker, but you can change docker port, example :
+```bash
+docker run -p 5000:9080 -d logins
 ```
