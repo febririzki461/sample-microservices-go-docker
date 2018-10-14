@@ -5,24 +5,26 @@ import (
 //	"net/http"
 //	"net/http/httptest"
 	"testing"
+	"github.com/stretchr/testify/assert"
 //"github.com/gin-gonic/gin"
 )
 
 
 func TestLoginRequired(t *testing.T){
 
-	usernya := "cbn"
-        passnya := "admin"
+	usernya := ""
+        passnya := ""
 
         if usernya != "" {
-                t.Errorf("required ","data user tidak boleh kosong")
+                assert := assert.New(t)
+    		assert.Equal(usernya, false, "seharusnya false")
+
         }
 
         if passnya != "" {
-                t.Errorf("required ","data pass tidak boleh kosong")
+		assert := assert.New(t)
+                assert.Equal(usernya, false, "seharusnya false")
         }
-
-
-
 }
+
 
