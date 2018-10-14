@@ -23,5 +23,5 @@ install:
 # failing test, we want to see both. Configure golangci-lint with a
 # .golangci.yml file at the top level of your repo.
 script:
-  - go test logins/test/*.go  # Run all the tests with the test detector enabled
+  - go test logins/test/login_pass_test.go  # Run all the tests with the test detector enabled
 
