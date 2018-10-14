@@ -18,15 +18,15 @@ git:
 # in vendor/
 install:
   - go get -u github.com/gin-gonic/gin
-
+  - go get -u github.com/stretchr/testify/asser
 # script always runs to completion (set +e). If we have linter issues AND a
 
 jobs:  
   include:
-    - stage: "Login Pass"                # naming the Tests stage
-      name: "LoginPass"            # names the first Tests stage job
+    - stage: "Login Pass"                
+      name:  "LoginPass"            
       script: go test logins/test/login_pass_test.go
     - stage: "Login form user test"
-      name: "Login Form User Test"
+      name:  "Login Form User Test"
       script: go test logins/test/form_user_test.go
 
