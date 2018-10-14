@@ -18,7 +18,7 @@ git:
 # in vendor/
 install:
   - go get -u github.com/gin-gonic/gin
-  - go get -u github.com/stretchr/testify/asser
+  - go get -u github.com/stretchr/testify/assert
 # script always runs to completion (set +e). If we have linter issues AND a
 
 jobs:  
