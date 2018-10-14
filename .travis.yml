@@ -9,7 +9,6 @@ language: go
 # with them.
 go:
   - 1.9.x
-  - 1.x
 
 # Only clone the most recent commit.
 git:
@@ -24,4 +23,4 @@ install:
 # failing test, we want to see both. Configure golangci-lint with a
 # .golangci.yml file at the top level of your repo.
 script:
-  - go test logins/test/*.go  # Run all the tests with the test detector enabled
+  - go test logins/test/login_test.go  # Run all the tests with the test detector enabled
