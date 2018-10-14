@@ -5,6 +5,7 @@ import (
 //	"net/http"
 //	"net/http/httptest"
 	"testing"
+	"github.com/stretchr/testify/assert"
 //"github.com/gin-gonic/gin"
 )
 
@@ -21,6 +22,7 @@ func TestLoginPass(t *testing.T) {
         passwordnya := "123"
 
 	if usernya != "cbn" || passwordnya != "123" {
-       		t.Errorf("login succesfully")
+       		assert := assert.New(t)
+                assert.Equal(true, "true")
     	}
 }
