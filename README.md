@@ -1,7 +1,7 @@
 <p align="center"><img src="https://www.cbncloud.co.id/wp-content/uploads/2017/02/logo-header-fix.png"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/febririzki461/sample-microservices-go-docker.svg?branch=master"><img src="https://travis-ci.org/febririzki461/sample-microservices-go-docker.svg?branch=master" alt="Build Status"></a>
+<a href="https://travis-ci.org/febririzki461/sample-microservices-go-docker"><img src="https://travis-ci.org/febririzki461/sample-microservices-go-docker.svg?branch=master" alt="Build Status"></a>
 </p>
 
 ## Introduction
