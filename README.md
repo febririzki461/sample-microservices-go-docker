@@ -66,3 +66,16 @@ same with Docker, but you can change docker port, example :
 ```bash
 docker run -p 5000:9080 -d logins
 ```
+
+## Push-docker-hub
+you can push images docker hub :
+```bash
+Docker tag <images id > <dockerid>/<name images>:<tag>
+```
+noted:
+images id : you can see docker ( docker images )
+dockerid : login dockerid
+name images : you can see docker ( docker images )
+tag : you must fill the tag, but you don't fill the name is latest
+
+## Testing
