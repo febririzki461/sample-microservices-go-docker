@@ -56,7 +56,7 @@ in docker images you can see <b>Users</b> in images docker
 ## Docker
 in docker you can start container, example :
 ```bash
-docker run -d logins
+docker run -d <images docker>
 ```
 noted: 
 <b> by default follow the installation port in the docker image </b>
@@ -64,7 +64,7 @@ noted:
 ## Docker-port
 same with Docker, but you can change docker port, example :
 ```bash
-docker run -p 5000:9080 -d logins
+docker run -p <inggress>:<enggres> -d <images docker>
 ```
 
 ## Push-docker-hub
