@@ -22,9 +22,6 @@ A container is a standard unit of software that packages up code and all its dep
   * [Docker](#docker)
   * [Docker-port](#docker-port)
   * [Push-docker-hub](#push-docker-hub)
-  * [Testing](#testing)
-    * [Testing-curl-logins](#testing-curl-logins)
-    * [Testing-curl-users](#testing-curl-users)
 <!--te-->
 
 ## Install
@@ -77,5 +74,3 @@ images id : you can see docker ( docker images ) <br>
 dockerid : login dockerid <br>
 name images : you can see docker ( docker images ) <br>
 tag : you must fill the tag, but you don't fill the name is latest <br>
-
-## Testing
