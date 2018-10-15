@@ -9,7 +9,7 @@ language: go
 # with them.
 go:
   - 1.9.x
-
+  - 1.8.x
 # Only clone the most recent commit.
 git:
   depth: 1
@@ -23,10 +23,12 @@ install:
 
 jobs:  
   include:
-    - stage: "Login Pass"                
-      name:  "LoginPass"            
-      script: go test logins/test/login_pass_test.go
-    - stage: "Login form user test"
-      name:  "Login Form User Test"
-      script: go test logins/test/form_user_test.go
+    - stage: "Deployment"
+      go : 1.8                
+      name:  "unit testing login"            
+      script: go test logins/test/*.go.go
+    - stage: "Production"
+      go : 1.9
+      name:  "Unit Testing Login"
+      script: go test logins/test/*.go
 
