@@ -25,10 +25,10 @@ jobs:
   include:
     - stage: "Deployment"
       go : 1.8                
-      name:  "unit testing login"            
-      script: go test logins/test/*.go.go
+      name:  "unit testing All"            
+      script: go test logins/test/*.go
     - stage: "Production"
       go : 1.9
-      name:  "Unit Testing Login"
+      name:  "Unit Testing All"
       script: go test logins/test/*.go
 
