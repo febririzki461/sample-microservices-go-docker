@@ -1,3 +1,9 @@
+<p align="center"><img src="https://www.cbncloud.co.id/wp-content/uploads/2017/02/logo-header-fix.png"></p>
+
+<p align="center">
+<a href="https://travis-ci.org/febririzki461/sample-microservices-go-docker.svg?branch=master"><img src="https://travis-ci.org/febririzki461/sample-microservices-go-docker.svg?branch=master" alt="Build Status"></a>
+</p>
+
 ## Introduction
 Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations. The trend has grown popular in recent years as Enterprises look to become more Agile and move towards a DevOps and continuous testing. Microservices can help create scalable, testable software that can be delivered weekly, not yearly.
 
