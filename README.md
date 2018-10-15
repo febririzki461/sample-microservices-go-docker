@@ -73,9 +73,9 @@ you can push images docker hub :
 Docker tag <images id > <dockerid>/<name images>:<tag>
 ```
 noted:
-images id : you can see docker ( docker images )
-dockerid : login dockerid
-name images : you can see docker ( docker images )
-tag : you must fill the tag, but you don't fill the name is latest
+images id : you can see docker ( docker images ) <br>
+dockerid : login dockerid <br>
+name images : you can see docker ( docker images ) <br>
+tag : you must fill the tag, but you don't fill the name is latest <br>
 
 ## Testing
