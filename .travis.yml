@@ -10,9 +10,6 @@ language: go
 go:
   - 1.9.x
   - 1.8.x
-# Only clone the most recent commit.
-git:
-  depth: 1
 
 # Skip the install step. Don't `go get` dependencies. Only build with the code
 # in vendor/
@@ -20,6 +17,10 @@ install:
   - go get -u github.com/gin-gonic/gin
   - go get -u github.com/stretchr/testify/assert
 # script always runs to completion (set +e). If we have linter issues AND a
+
+script:
+  - go build
+
 
 jobs:  
   include:
