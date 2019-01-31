@@ -13,13 +13,14 @@ go:
 
 # Skip the install step. Don't `go get` dependencies. Only build with the code
 # in vendor/
-install:
-  - go get -u github.com/gin-gonic/gin
-  - go get -u github.com/stretchr/testify/assert
+#install:
+#  - go get -u github.com/gin-gonic/gin
+ # - go get -u github.com/stretchr/testify/assert
 # script always runs to completion (set +e). If we have linter issues AND a
 
 script:
   - go build
+  - go test
 
 
 jobs:  
