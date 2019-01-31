@@ -8,29 +8,12 @@ language: go
 # updates. Any older versions be considered deprecated. Don't bother testing
 # with them.
 go:
-  - 1.9.x
   - 1.8.x
-
-# Skip the install step. Don't `go get` dependencies. Only build with the code
-# in vendor/
-#install:
-#  - go get -u github.com/gin-gonic/gin
- # - go get -u github.com/stretchr/testify/assert
-# script always runs to completion (set +e). If we have linter issues AND a
-
-script:
-  - go build
-  - go test
-
 
 jobs:  
   include:
     - stage: "Deployment"
       go : 1.8                
       name:  "unit testing All"            
-      script: go test logins/test/*.go
-    - stage: "Production"
-      go : 1.9
-      name:  "Unit Testing All"
-      script: go test logins/test/*.go
-
+      script: - go build
+              - go test logins/test/*.go
